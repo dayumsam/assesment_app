@@ -1,0 +1,14 @@
+import React from 'react';
+import { useHistory, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Login from "./pages/auth/login"
+
+function App() {
+  return (
+    <div className="App">
+      <Login/>
+    </div>
+  );
+}
+
+export default App;
