@@ -7,7 +7,6 @@ node_modules
 /coverage
 
 # production
-# assesment-webapp/build
 
 # misc
 .DS_Store
