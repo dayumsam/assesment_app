@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "name": "schools",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "richtext"
+    },
+    "assessments": {
+      "via": "schools",
+      "collection": "assessments"
+    },
+    "users": {
+      "via": "school",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

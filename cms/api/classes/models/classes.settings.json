@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "name": "Classes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "class": {
+      "type": "integer"
+    },
+    "assessments": {
+      "via": "classes",
+      "collection": "assessments"
+    },
+    "users": {
+      "via": "class",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

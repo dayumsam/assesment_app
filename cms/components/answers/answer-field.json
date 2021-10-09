@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_answers_answer_fields",
+  "info": {
+    "name": "Answer field",
+    "icon": "angle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "component",
+      "repeatable": false,
+      "component": "questions.question"
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "answers.answers"
+    },
+    "correct": {
+      "type": "boolean"
+    }
+  }
+}

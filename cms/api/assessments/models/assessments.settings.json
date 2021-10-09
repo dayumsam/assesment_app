@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "assessments",
+  "info": {
+    "name": "assessments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "questions": {
+      "type": "dynamiczone",
+      "components": [
+        "mcq-questions.answer-option"
+      ]
+    },
+    "classes": {
+      "collection": "classes",
+      "via": "assessments",
+      "dominant": true
+    },
+    "schools": {
+      "collection": "schools",
+      "via": "assessments",
+      "dominant": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_answers_answers",
+  "info": {
+    "name": "Answers",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "answer": {
+      "type": "richtext"
+    }
+  }
+}

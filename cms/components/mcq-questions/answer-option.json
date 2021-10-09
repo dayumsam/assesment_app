@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_questions_answer_options",
+  "info": {
+    "name": "mcq-question",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "component",
+      "repeatable": false,
+      "component": "questions.question"
+    },
+    "answer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "mcq-questions.mcq-answer"
+    },
+    "correct": {
+      "type": "boolean",
+      "private": true
+    }
+  }
+}
